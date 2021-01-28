@@ -22,14 +22,14 @@
   <body>        
     <div class="title">
       <div class="centered margintop">
-        1/7
+        2/7
       </div>
     </div>
     <p class="text-center quote">
-      <span class="red">L’avarícia</span> ho perd tot pel fet que ho vol tot.
+      La <span class="red">gola</span>és un senyal que alguna cosa se’ns està menjant.
     </p>
     <p class="text-center quote name">
-      << Jean de La Fontaine (1621-1695), Faules.>>
+      << Peter De Vries (1910-1993)>>
     </p>
   <!-- Button trigger modal -->
   <div class="centered">
@@ -42,13 +42,58 @@
 
     <div class="input-group input-group-lg input">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Contasenya</span>
+        <span class="input-group-text" id="inputGroup-sizing-lg">Edat</span>
       </div>
-      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="contrasenya">
-      <div class="input-group-append">
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="edat">
+      
+      <!-- <div class="input-group-append">
         <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
-      </div>
+      </div> -->
     </div>
+    <div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Nombre de mascotes</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="mascotes">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div><div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Partit Polític</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="politic">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div>
+    </div>
+    
+    <div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Empresa on labora</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="empresa">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div>
+
+    <div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Lloc de residència</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="lloc">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div>
+    <button class="btn btn-secondary mt-3" type="button" id="button-submit">Acceptar</button>
+
     <li class="nav-item d-none">
       <a class="nav-link" href="./another-page.html">Another page</a>
     </li>
@@ -82,21 +127,21 @@
         <div class="modal-body">
           <p class="modal-text modal-font">
             <i>
-            <strong>Avarícia</strong>: Ànsia per atresorar molt més del que es té, ja siguin bens materials, estatus o poder, sense necessitar-ho, amb la única finalitat de posseir-ho. És la tendència a tenir i a retenir per sentir-se potent i imponent
+            <strong>Gola</strong>: impuls irrefrenable i desordenat a menjar i beure amb una voracitat forassenyada, molt més enllà de la necessitat biològica de nutrients. La gola implica afartar-se fins a fer-se mal. A no tenir-ne mai prou.
             </i>
           </p>
             <hr>
             <p class="modal-text modal-font"> 
-              Ben fet Vinyet. La primera prova ha estat superada. Fàcil, cert? No et confiïs. Només has tombat un dels set pecats capitals que t'esperen, i el temps corre. Cada hora, cada minut, cada segon, compta. I els has de fer comptar, no és dolenta l'avarícia del temps, l'únic que ens queda, i l'únic que sempre ens faltarà.
+              Ben fet Vinyet. La segona prova ha estat superada. Dos dels pecats han estat tombats.
               <br>
               <br>
-              Com a recompensa, et donarem uns nombres. No n'has de fer res de moment, tan sols guardar-los per quan arribi el moment, per quan veiem que realment ets mereixedora d'aquest privilegi: quan tombis els 7 pecats. Apunta't bé les xifres, que demà ja no hi seran, i deixa constància també del pecat que lliga aquests nombres a les tenebres i les foscors.              <br>
+              Com ahir, apunta't bé les xifres, que demà ja no hi seran, i deixa constància també del pecat que lliga aquests nombres a les tenebres i les foscors.              <br>
               <div class="card">
                 <div class="card-body">
                   <strong>
-                    Avarícia
+                    Gola
                     <br>
-                    2.12612, 41.3794
+                    2.13145, 41.37560
                   </strong>
                 </div>
               </div>
@@ -110,7 +155,7 @@
           
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="button-submit">Tancar</button>
         </div>
       </div>
     </div>
@@ -128,21 +173,22 @@
               </button>
             </div>
             <div class="modal-body">
-              <p class="modal-text modal-font">I, quan selecciones allò que vols veure, els noms dels carrers t'hi portaran, a un títol sense cap espai.</p>
-              <p class="modal-font">
-                37°54'34.8"N 0°44'35.5"W
-              </p>
-              <p class="modal-font">
-                41°50'57.7"N 3°03'33.7"E
+              <p class="modal-text modal-font">
+                Un pecat que no és capital és el d'espiar i tafanejar la vida de l'altra gent.
+                No és capital, però no deixa de ser intrusiu i molest.
+                <br>
+                Sabem la situació que has patit, on la teva persona ha estat investigada de manera irrespectuosa i vilment desproporcionada.
+                Aquesta prova, et farà pecar, si, però també et donarà la satisfacció de venjar-te i ser tu, ara, l'espiada qui espiarà l'espia.
+                <br>
+                Hem aconseguit el nom d'una persona que creiem que està darrere de trifulgues malèvoles, segurament no  directament relacionada amb la teva situació,
+                però sabem del cert que la seva participació en actes poc lícits està més que provada.
+                <br>
+                <br>
+                Per a resoldre aquesta prova, primerament hauràs d'aconseguir el seu nom, que es presenta amagat a la següent imatge. Després conduiràs un treball de recerca, emprant els mètodes i les plataformes que desitgis, fins a aconseguir la informació que precisem d'aquest individu.                <br>
+                Sort.
+                <br>
                 </p>
-                <p class="modal-font">  
-              41°11'33.9"N 1°24'22.0"E
-                </p>
-                <p class="modal-font">
-
-              41°54'17.5"N 3°09'13.7"E
-
-                </p>
+                <img src="./public/laberint.png" alt="">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
@@ -172,17 +218,36 @@
           
 
         $('#button-submit').on('click', () => {
-          let contrasenya = $('#contrasenya').val();
+          console.log("click")
+          let edat = $('#edat').val().toString().toLowerCase();
+          let mascotes = $('#mascotes').val().toString().toLowerCase();
+          console.log(mascotes)
 
-          if (
-            contrasenya.toLowerCase() === 'cafedelagranota' ||
-            contrasenya.toLowerCase() === 'elcafedelagranota' ||
-            contrasenya.toLowerCase() === 'cafèdelagranota' ||
-            contrasenya.toLowerCase() === 'elcafèdelagranota'
-          ) {
+          let politic = $('#politic').val().toString().toLowerCase();
+          let empresa = $('#empresa').val().toString().toLowerCase();
+          let lloc = $('#lloc').val().toString().toLowerCase();
+
+          let errors = "";
+
+          if(edat != "58" && edat != "cincuanta vuit"&& edat != "cincuanta-vuit" && edat != "cincuantavuit"){
+            errors += "edat, "
+          }
+          if(mascotes != "3" && mascotes != "tres" ){
+            errors += "nombre de mascotes, "
+          }
+          if(politic != "psc" && politic != "psoe" ){
+            errors += "partit polític, "
+          }
+          if(empresa != "jardineriesbesalu" && empresa != "jardineries besalú" && empresa != "jardineries besalu"){
+            errors += "empresa, "
+          }
+          if(lloc != "besalú" && lloc != "besalu"){
+            errors += "lloc "
+          }
+          if(errors == ""){
             $('#modalCorrect').modal('show');
-          } else {
-            alert('No es correcte. El temps corre!');
+          } else{
+            alert('No es correcte. Errors en els següents camps: '+errors+'    -El temps corre!');
           }
         });
 
@@ -193,7 +258,7 @@
         direction: 'down', 
 
         // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
-        date: 'January 28, 2021 23:59:59', 
+        date: 'January 29, 2021 23:59:59', 
 
         // callback works only with direction = "down"
         callback: function() { alert('times up!'); }
