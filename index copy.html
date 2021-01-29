@@ -22,36 +22,77 @@
   <body>        
     <div class="title">
       <div class="centered margintop">
-        3/7
+        2/7
       </div>
     </div>
     <p class="text-center quote">
-      Qui és lleial alça l’esguard amb humilitat; qui és deslleial ho fa amb <span class="red">supèrbia</span>.
-     
+      La <span class="red">gola</span>és un senyal que alguna cosa se’ns està menjant.
     </p>
     <p class="text-center quote name">
-      << Ramon Llull (1232-1316)>>
+      << Peter De Vries (1910-1993)>>
     </p>
   <!-- Button trigger modal -->
   <div class="centered">
-    <button type="button" class="btn btn-danger" id="enigma">
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
       § Enigma § 
     </button>
   </div>
 
+ 
 
     <div class="input-group input-group-lg input">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Resposta</span>
+        <span class="input-group-text" id="inputGroup-sizing-lg">Edat</span>
       </div>
-      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="respostainput">
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="edat">
       
-      <div class="input-group-append">
+      <!-- <div class="input-group-append">
         <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div>
+    <div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Nombre de mascotes</span>
       </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="mascotes">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div><div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Partit Polític</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="politic">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div>
+    </div>
+    
+    <div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Empresa on labora</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="empresa">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
     </div>
 
-
+    <div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Lloc de residència</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="lloc">
+      
+      <!-- <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div> -->
+    </div>
+    <button class="btn btn-secondary mt-3" type="button" id="button-submit">Acceptar</button>
 
     <li class="nav-item d-none">
       <a class="nav-link" href="./another-page.html">Another page</a>
@@ -70,11 +111,7 @@
           <p class="hour">s</p>
         </div>
       <!-- </div> -->
-      <div id="puzzle" style="visibility: hidden; margin-top: 30px;">
-        <iframe style="width: 100%; height: 600px; max-height: 90vh; border-style: solid; border-width: 2px; border-color: #888" allowFullScreen="true" src="https://www.jigsawexplorer.com/online-jigsaw-puzzle-player.html?frm=1&url=aHR0cHM6Ly9pLmliYi5jby83ck0xSlN6L2RvZy5qcGdfKG5vX3ByZXZpZXdfNClfKG5vcD0yMCk~" title="Jigsaw Puzzle">Jigsaw Puzzle</iframe>
-    
-      </div>
-    
+  
 
 
    <!-- Modal -->
@@ -90,21 +127,21 @@
         <div class="modal-body">
           <p class="modal-text modal-font">
             <i>
-            <strong>Supèrbia</strong>: Excessiva estima de si mateix que es manifesta per una ostentació de la pròpia superioritat, amb menyspreu dels altres.
+            <strong>Gola</strong>: impuls irrefrenable i desordenat a menjar i beure amb una voracitat forassenyada, molt més enllà de la necessitat biològica de nutrients. La gola implica afartar-se fins a fer-se mal. A no tenir-ne mai prou.
             </i>
           </p>
             <hr>
             <p class="modal-text modal-font"> 
-              Ben fet Vinyet. La tercera prova ha estat superada. Tres dels pecats han estat tombats.
+              Ben fet Vinyet. La segona prova ha estat superada. Dos dels pecats han estat tombats.
               <br>
               <br>
-              Com ahir, apunta't bé les xifres, que demà ja no hi seran, i deixa constància també del pecat que lliga aquests nombres a les tenebres i les foscors.<br>
+              Com ahir, apunta't bé les xifres, que demà ja no hi seran, i deixa constància també del pecat que lliga aquests nombres a les tenebres i les foscors.              <br>
               <div class="card">
                 <div class="card-body">
                   <strong>
-                    Supèrbia
+                    Gola
                     <br>
-                    2.14924, 41.37579
+                    2.13145, 41.37560
                   </strong>
                 </div>
               </div>
@@ -151,6 +188,7 @@
                 Sort.
                 <br>
                 </p>
+                <img src="./public/laberint.png" alt="">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
@@ -177,19 +215,39 @@
         <script src="js/jquery.flipTimer.js"></script>
         <script type="text/javascript">
 
-          $("#enigma").on("click",()=>{
-            $("#puzzle").css("visibility", "visible");
-          })
+          
 
         $('#button-submit').on('click', () => {
           console.log("click")
-          let resposta = $('#respostainput').val().toString().toLowerCase();
-          console.log(resposta)
-      
-          if(resposta == "gos" || resposta =="gossos"){
+          let edat = $('#edat').val().toString().toLowerCase();
+          let mascotes = $('#mascotes').val().toString().toLowerCase();
+          console.log(mascotes)
+
+          let politic = $('#politic').val().toString().toLowerCase();
+          let empresa = $('#empresa').val().toString().toLowerCase();
+          let lloc = $('#lloc').val().toString().toLowerCase();
+
+          let errors = "";
+
+          if(edat != "58" && edat != "cincuanta vuit"&& edat != "cincuanta-vuit" && edat != "cincuantavuit"){
+            errors += "edat, "
+          }
+          if(mascotes != "3" && mascotes != "tres" ){
+            errors += "nombre de mascotes, "
+          }
+          if(politic != "psc" && politic != "psoe" ){
+            errors += "partit polític, "
+          }
+          if(empresa != "jardineriesbesalu" && empresa != "jardineries besalú" && empresa != "jardineries besalu"){
+            errors += "empresa, "
+          }
+          if(lloc != "besalú" && lloc != "besalu"){
+            errors += "lloc "
+          }
+          if(errors == ""){
             $('#modalCorrect').modal('show');
           } else{
-            alert('No es correcte. El temps corre!');
+            alert('No es correcte. Errors en els següents camps: '+errors+'    -El temps corre!');
           }
         });
 
@@ -200,7 +258,7 @@
         direction: 'down', 
 
         // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
-        date: 'January 30, 2021 23:59:59', 
+        date: 'January 29, 2021 23:59:59', 
 
         // callback works only with direction = "down"
         callback: function() { alert('times up!'); }
