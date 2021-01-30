@@ -22,33 +22,37 @@
   <body>        
     <div class="title">
       <div class="centered margintop">
-        4/7
+        3/7
       </div>
     </div>
     <p class="text-center quote">
-      El cansament ronca sobre els còdols; tanmateix la <span class="red">peresa</span> troba dur el coixí de ploma.
+      Qui és lleial alça l’esguard amb humilitat; qui és deslleial ho fa amb <span class="red">supèrbia</span>.
+     
     </p>
     <p class="text-center quote name">
-      << William Shakespeare (1564-1616), Cymbeline.>>
+      << Ramon Llull (1232-1316)>>
     </p>
   <!-- Button trigger modal -->
   <div class="centered">
-    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-danger" id="enigma">
       § Enigma § 
     </button>
   </div>
 
- 
 
     <div class="input-group input-group-lg input">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Preu</span>
+        <span class="input-group-text" id="inputGroup-sizing-lg">Resposta</span>
       </div>
-      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="contrasenya">
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="respostainput">
+      
       <div class="input-group-append">
         <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
       </div>
     </div>
+
+
+
     <li class="nav-item d-none">
       <a class="nav-link" href="./another-page.html">Another page</a>
     </li>
@@ -66,7 +70,11 @@
           <p class="hour">s</p>
         </div>
       <!-- </div> -->
-  
+      <div id="puzzle" style="visibility: hidden; margin-top: 30px;">
+        <iframe style="width: 100%; height: 600px; max-height: 90vh; border-style: solid; border-width: 2px; border-color: #888" allowFullScreen="true" src="https://www.jigsawexplorer.com/online-jigsaw-puzzle-player.html?frm=1&url=aHR0cHM6Ly9pLmliYi5jby83ck0xSlN6L2RvZy5qcGdfKG5vX3ByZXZpZXdfNClfKG5vcD0yMCk~" title="Jigsaw Puzzle">Jigsaw Puzzle</iframe>
+    
+      </div>
+    
 
 
    <!-- Modal -->
@@ -82,21 +90,21 @@
         <div class="modal-body">
           <p class="modal-text modal-font">
             <i>
-            <strong>Peresa</strong>: falta d'esma o coratge per fer quelcom, caracteritzada per un to vital baix i per una lentitud actitudinal que dificulta la gestió assertiva del dia a dia. La peresa condueix a la deixadesa i a la desídia.
+            <strong>Supèrbia</strong>: Excessiva estima de si mateix que es manifesta per una ostentació de la pròpia superioritat, amb menyspreu dels altres.
             </i>
           </p>
             <hr>
             <p class="modal-text modal-font"> 
-              Ben fet Vinyet. La quarta prova ha estat superada. Quatre pecats han estat tombats.
+              Ben fet Vinyet. La tercera prova ha estat superada. Tres dels pecats han estat tombats.
               <br>
               <br>
               Com ahir, apunta't bé les xifres, que demà ja no hi seran, i deixa constància també del pecat que lliga aquests nombres a les tenebres i les foscors.<br>
               <div class="card">
                 <div class="card-body">
                   <strong>
-                    Peresa
+                    Supèrbia
                     <br>
-                    41.38339, 2.15911
+                    2.14924, 41.37579
                   </strong>
                 </div>
               </div>
@@ -110,7 +118,7 @@
           
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" id="button-submit">Tancar</button>
         </div>
       </div>
     </div>
@@ -119,7 +127,7 @@
 
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Enigma</h5>
@@ -129,30 +137,20 @@
             </div>
             <div class="modal-body">
               <p class="modal-text modal-font">
-                Fa uns dies, la SCS va descobrir un restaurant als EUA que semblava ser bo.
-                Volíem anar-hi com més aviat millor, però no coneixíem el preu de la gasolina que posaven en aquell poble,
-                i no volíem jugar-nos a què ens cobressin un ull de la cara en cas que ens quedéssim amb el dipòsit buit.
-                <br>                <br>
-
-                Avui toca una prova d'investigació geogràfica, Vinyet, que esperem que ens solucioni l'angoixa del desconeixement del preu
-                de la gasolina al poble del restaurant.
-                <br>                   <br>
- 
-                La missió d'avui és senzilla: escanejant aquest codi QR, podràs descarregar-te una aplicació, on hauràs de trobar
-                el restaurant publicat. És la mateixa aplicació que vàrem fer servir nosaltres. Un cop trobis el restaurant, esbrina
-                a quin poble es troba. Toca, simplement, trobar el preu de la gasolina que fan pagar a l'única gasolinera del poble.
-                
-                <br>                <br>
-
-                Però clar, per a veure a quin preu es troba la benzina, t'hauries de desplaçar fins al poble, i donar un cop d'ull al
-                cartell que hi ha davant de la benzinera amb els preus. Si aconsegueixes desplaçar-t'hi, observaràs que la gasolinera
-                disposa de 3 tipus diferents de benzina. A nosaltres ens interessa la que es mostra a dalt de tot del cartell, aquesta
-                és la que fem servir... Però clar, això si aconsegueixes arribar a aquest poble dels Estats Units i trobar la benzinera
-                en menys de 24 hores i amb el confinament municipal... Em pregunto si hi ha alguna tecnologia que ens permeti visitar altres llocs
-                com si estiguéssim a peu de carrer, però sense sortir de casa...
-
-              </p>
-              <img src="./public/qr.png" alt="">
+                Un pecat que no és capital és el d'espiar i tafanejar la vida de l'altra gent.
+                No és capital, però no deixa de ser intrusiu i molest.
+                <br>
+                Sabem la situació que has patit, on la teva persona ha estat investigada de manera irrespectuosa i vilment desproporcionada.
+                Aquesta prova, et farà pecar, si, però també et donarà la satisfacció de venjar-te i ser tu, ara, l'espiada qui espiarà l'espia.
+                <br>
+                Hem aconseguit el nom d'una persona que creiem que està darrere de trifulgues malèvoles, segurament no  directament relacionada amb la teva situació,
+                però sabem del cert que la seva participació en actes poc lícits està més que provada.
+                <br>
+                <br>
+                Per a resoldre aquesta prova, primerament hauràs d'aconseguir el seu nom, que es presenta amagat a la següent imatge. Després conduiràs un treball de recerca, emprant els mètodes i les plataformes que desitgis, fins a aconseguir la informació que precisem d'aquest individu.                <br>
+                Sort.
+                <br>
+                </p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
@@ -179,19 +177,18 @@
         <script src="js/jquery.flipTimer.js"></script>
         <script type="text/javascript">
 
-          
+          $("#enigma").on("click",()=>{
+            $("#puzzle").css("visibility", "visible");
+          })
 
         $('#button-submit').on('click', () => {
-          let contrasenya = $('#contrasenya').val();
-
-          if (
-            contrasenya.toString().toLowerCase() === '415' ||
-            contrasenya.toString().toLowerCase() === '415,9' ||
-            contrasenya.toString().toLowerCase() === '415,8' ||
-            contrasenya.toString().toLowerCase().substring(0,3) === '415'
-          ) {
+          console.log("click")
+          let resposta = $('#respostainput').val().toString().toLowerCase();
+          console.log(resposta)
+      
+          if(resposta == "gos" || resposta =="gossos"){
             $('#modalCorrect').modal('show');
-          } else {
+          } else{
             alert('No es correcte. El temps corre!');
           }
         });
@@ -203,7 +200,7 @@
         direction: 'down', 
 
         // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
-        date: 'January 31, 2021 23:59:59', 
+        date: 'January 30, 2021 23:59:59', 
 
         // callback works only with direction = "down"
         callback: function() { alert('times up!'); }
