@@ -22,14 +22,17 @@
   <body>        
     <div class="title">
       <div class="centered margintop">
-        7/7
+        6/7
       </div>
     </div>
     <p class="text-center quote">
-      A les ànimes de les persones, el raïm de la <span class="red"> ira </span>  es va omplint i es torna pesant, [...] a punt per a la verema.
+      Con salvaje <span class="red">lujuria</span> de pantera
+      se enardece la selva en el estío,
+      y el huracán con ímpetu bravío
+      destrenza su olorosa cabellera.
     </p>
     <p class="text-center quote name">
-      << John Steinbeck (1902-1968), El raïm de la ira (1939).>>
+      << Julián del Casal (1621-1695), Galatea.>>
     </p>
   <!-- Button trigger modal -->
   <div class="centered">
@@ -40,10 +43,16 @@
 
  
 
+    <div class="input-group input-group-lg input">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Contasenya</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="contrasenya">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-submit">Acceptar</button>
+      </div>
+    </div>
 
-    <li class="nav-item d-none">
-      <a class="nav-link" href="./another-page.html">Another page</a>
-    </li>
        <!-- <div class="center"> -->
         <div class="flipTimer center mt-3">
           <div class="hours"></div>
@@ -74,21 +83,21 @@
         <div class="modal-body">
           <p class="modal-text modal-font">
             <i>
-            <strong>Avarícia</strong>: Ànsia per atresorar molt més del que es té, ja siguin bens materials, estatus o poder, sense necessitar-ho, amb la única finalitat de posseir-ho. És la tendència a tenir i a retenir per sentir-se potent i imponent
+            <strong>Luxúria</strong>: La luxúria és un desig sexual agut, continuat i incontrolable, de base instintiva, acompanyat de pensaments eròtics recurrents i monotemàtics.
             </i>
           </p>
             <hr>
             <p class="modal-text modal-font"> 
-              Ben fet Vinyet. La primera prova ha estat superada. Fàcil, cert? No et confiïs. Només has tombat un dels set pecats capitals que t'esperen, i el temps corre. Cada hora, cada minut, cada segon, compta. I els has de fer comptar, no és dolenta l'avarícia del temps, l'únic que ens queda, i l'únic que sempre ens faltarà.
+              Ben fet Vinyet. La sisena prova ha estat superada. Sis dels pecats han estat tombats.
               <br>
               <br>
-              Com a recompensa, et donarem uns nombres. No n'has de fer res de moment, tan sols guardar-los per quan arribi el moment, per quan veiem que realment ets mereixedora d'aquest privilegi: quan tombis els 7 pecats. Apunta't bé les xifres, que demà ja no hi seran, i deixa constància també del pecat que lliga aquests nombres a les tenebres i les foscors.              <br>
+              Com ahir, apunta't bé les xifres, que demà ja no hi seran, i deixa constància també del pecat que lliga aquests nombres a les tenebres i les foscors.<br>
               <div class="card">
                 <div class="card-body">
                   <strong>
-                    Avarícia
+                    Luxúria
                     <br>
-                    2.12612, 41.3794
+                    2.16026, 41.38699 
                   </strong>
                 </div>
               </div>
@@ -121,25 +130,18 @@
             </div>
             <div class="modal-body">
               <p class="modal-text modal-font">
-                Bon dia Vinyet. <br>
-                El dia ha arribat. El setè dia, el jorn que tombaràs tots els pecats... o no? <br>
-                <br>
-                Des de la SCS et volem congratular per dur a terme i completar totes les tasques i missions correctament. És per això, que per a tombar 
-                aquest setè pecat, la tasca requerida serà una mica especial. Fins ara, atenent-nos als horaris intempestius de la seva vida, i a les restriccions
-                que la crisi del Covid ens ha deixat, hem procurat que les missions poguessin ser realitzades des de qualsevol lloc i a qualsevol hora; sempre dintre
-                del límit de 24 hores.
-                <br> Aquesta missió serà diferent, per a obtenir els nombres que manquen, i saber què hauràs de fer amb les diferents xifres que se t'han anat donant 
-                dia a dia, hauràs de presentar-te a l'indret marcat per aquestes coordenades cap a tres quarts de nou del vespre. [41.38438702419371, 2.1688714131925724]
+                Per a tombar el sisè pecat, aquest cop hauràs de fer un treball d'investigació històric. Em pregunto quin mitjà et permet veure de primera mà les notíces d'un dia...
+                  <br><br>
+                1. El dia <strong>12/01/1991</strong> qui assegurava que Espanya no entraria en guerra?                <br>
+                2. El dia <strong>06/11/1997</strong> quin era el cotxe més vengut? (Fixat-hi bé jeje)<br>
+                3. El dia <strong>16/09/1916</strong> quantes nacions estaven en armes? (Potser has de passar pàgina)<br>
+                4. El dia <strong>19/03/1958</strong> qué última pieza se posó en la calle Aragón?<br>
+                5. El dia <strong>03/02/1998</strong> qui va portar llum en aquest món perquè és un solet?<br>
+                <br><br>
+                Resol els engimes i obtindràs la resposta.
 
-                <br>
-                No faltis,
-                <br>
-                <strong>
-                  Ens veiem demà, al capvespre, <br>
-                  SCS
-                </strong>
-   
               </p>
+              <img src="public/mots.png" alt=""/>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
@@ -172,10 +174,8 @@
           let contrasenya = $('#contrasenya').val();
 
           if (
-            contrasenya.toLowerCase() === 'cafedelagranota' ||
-            contrasenya.toLowerCase() === 'elcafedelagranota' ||
-            contrasenya.toLowerCase() === 'cafèdelagranota' ||
-            contrasenya.toLowerCase() === 'elcafèdelagranota'
+            contrasenya.toLowerCase() === 'gatet' 
+
           ) {
             $('#modalCorrect').modal('show');
           } else {
@@ -190,7 +190,7 @@
         direction: 'down', 
 
         // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
-        date: 'February 3, 2021 23:59:59', 
+        date: 'February 02, 2021 23:59:59', 
 
         // callback works only with direction = "down"
         callback: function() { alert('times up!'); }
